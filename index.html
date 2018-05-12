@@ -1,76 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
     <title>DozJS</title>
-  </head>
-  <body>
+</head>
 
+<body>
 
-<div style="text-align:center">
-<br/><br/>
-<img width="300" src="https://raw.githubusercontent.com/dozjs/doz/master/extra/doz.png" title="doz"/>
-<br/><br/>
-<br/><br/>
-A JavaScript framework for building UI, almost like writing in VanillaJS.
-<br/><br/>
-<a href="https://travis-ci.org/dozjs/doz" target="_blank"><img src="https://travis-ci.org/dozjs/doz.svg?branch=master" title="Build Status"/></a>
-<a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" title="License: MIT"/></a>
-<br/><br/>
-<a href="https://github.com/dozjs/doz/blob/master/documentation/index.md">Documentation</a> | <a href="https://dozjs.github.io/doz/example/">Demo</a>
-<br/><br/>
+<div class="container">
+    <div style="text-align:center; margin-top: 20px">
 
+        <p><img width="200" src="https://raw.githubusercontent.com/dozjs/doz/master/extra/doz.png" title="doz"/></p>
+
+        <p>A JavaScript framework for building UI, almost like writing in VanillaJS.</p>
+        <p>
+            <a href="https://travis-ci.org/dozjs/doz" target="_blank"><img
+                    src="https://travis-ci.org/dozjs/doz.svg?branch=master" title="Build Status"/></a>
+            <a href="https://opensource.org/licenses/MIT" target="_blank"><img
+                    src="https://img.shields.io/badge/License-MIT-yellow.svg" title="License: MIT"/></a>
+        </p>
+        <p>
+            <a href="https://github.com/dozjs/doz/blob/master/documentation/index.md">Documentation</a> | <a
+                href="https://dozjs.github.io/doz/example/">Demo</a>
+        </p>
+
+    </div>
+
+    <div>
+        <p>Tiny size: 7KB (gzip)</p>
+
+        <H3><a id="Why_another_framework_2"></a>Why another framework?</H3>
+        <p>In the web there are many frameworks that do all the same things. But a lot of them are complex, we need to
+            know
+            a lot of directives and they make confusion for example with the context of “this”, some introduce other
+            syntaxes like JSX. All you need is HTML, CSS and Doz.</p>
+
+        <iframe width="100%" height="400" src="//jsfiddle.net/z0xhxeau/5/embedded/result,js,html,css/dark/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        <br/><br/>
+        <h3><a id="Installation_5"></a>Installation</h3>
+        <pre class="prettyprint"><code>
+    npm install --save doz
+        </code></pre>
+
+        <h3><a id="Example_10"></a>Example</h3>
+        <pre class="prettyprint"><code class="lang-html">
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+        </code></pre>
+
+        <h4><a id="Component_definition_16"></a>Component definition</h4>
+        <pre class="prettyprint"><code class="lang-js">
+    Doz.component('button-counter', {
+        props: {
+            counter: 0
+        },
+        template: function() {
+            return `
+                &lt;div&gt;
+                    &lt;button onclick=&quot;this.click()&quot;&gt;${this.props.title}&lt;/button&gt;
+                    &lt;span class=&quot;counter&quot;&gt;${this.props.counter}&lt;/span&gt;
+                &lt;/div&gt;
+            `
+        },
+        click: function() {
+            this.props.counter += 1;
+        }
+    });
+        </code></pre>
+        <h4><a id="Make_a_view_with_the_component_defined_above_37"></a>Make a view with the component defined above
+        </h4>
+        <pre class="prettyprint"><code class="lang-js">
+    new Doz({
+        root: &apos;#app&apos;,
+        template: &grave;
+            &lt;button-counter title=&quot;Click me!&quot;&gt;&lt;/button-counter&gt;
+        &grave;
+    });
+        </code></pre>
+        <h4><a id="CDN_unpkg_49"></a>CDN unpkg</h4>
+        <pre class="prettyprint"><code class="lang-html">
+    &lt;script src=&quot;https://unpkg.com/doz/dist/doz.min.js&quot;&gt;&lt;/script&gt;
+        </code></pre>
+        <h4><a id="Changelog_54"></a>Changelog</h4>
+        <p>
+            You can view the changelog <a href="https://github.com/dozjs/doz/blob/master/CHANGELOG.md">here</a>
+        </p>
+        <h4><a id="License_57"></a>License</h4>
+        <p>
+            DOZ is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>
+        </p>
+        <h4><a id="Author_60"></a>Author</h4>
+        <p>
+            <a target="_blank" href="http://rica.li">Fabio Ricali</a>
+        </p>
+    </div>
 </div>
+</body>
 
-<p>Tiny size: 7KB (gzip)</p>
-<h2><a id="Why_another_framework_2"></a>Why another framework?</h2>
-<p>In the web there are many frameworks that do all the same things. But a lot of them are complex, we need to know a lot of directives and they make confusion for example with the context of “this”, some introduce other syntaxes like JSX. All you need is HTML, CSS and Doz.</p>
-<h2><a id="Installation_5"></a>Installation</h2>
-<pre><code>npm install --save doz
-</code></pre>
-<h2><a id="Example_10"></a>Example</h2>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"app"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-<h4><a id="Component_definition_16"></a>Component definition</h4>
-<pre><code class="language-javascript">Doz.component(<span class="hljs-string">'button-counter'</span>, {
-    props: {
-        counter: <span class="hljs-number">0</span>
-    },
-    template: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">`
-            &lt;div&gt;
-                &lt;button onclick="this.click()"&gt;<span class="hljs-subst">${this.props.title}</span>&lt;/button&gt;
-                &lt;span class="counter"&gt;<span class="hljs-subst">${this.props.counter}</span>&lt;/span&gt;
-            &lt;/div&gt;
-        `</span>
-    },
-    click: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-        <span class="hljs-keyword">this</span>.props.counter += <span class="hljs-number">1</span>;
-    }
-});
-</code></pre>
-<h4><a id="Make_a_view_with_the_component_defined_above_37"></a>Make a view with the component defined above</h4>
-<pre><code class="language-javascript"><span class="hljs-keyword">new</span> Doz({
-    root: <span class="hljs-string">'#app'</span>,
-    template: <span class="hljs-string">`
-        &lt;button-counter title="Click me!"&gt;&lt;/button-counter&gt;
-    `</span>
-});
-</code></pre>
-<h4><a id="CDN_unpkg_49"></a>CDN unpkg</h4>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://unpkg.com/doz/dist/doz.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-</code></pre>
-<h2><a id="Changelog_54"></a>Changelog</h2>
-<p>You can view the changelog &lt;a target=&quot;_blank&quot; href=&quot;<a href="https://github.com/dozjs/doz/blob/master/CHANGELOG.md">https://github.com/dozjs/doz/blob/master/CHANGELOG.md</a>&quot;&gt;here&lt;/a&gt;</p>
-<h2><a id="License_57"></a>License</h2>
-<p>DOZ is open-sourced software licensed under the &lt;a target=&quot;_blank&quot; href=&quot;<a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a>&quot;&gt;MIT license&lt;/a&gt;</p>
-<h2><a id="Author_60"></a>Author</h2>
-<a target="_blank" href="http://rica.li">Fabio Ricali</a>
-      </body>
 </html>
