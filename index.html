@@ -11,6 +11,8 @@
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
     <title>DozJS</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -27,6 +29,7 @@
             <a href="https://opensource.org/licenses/MIT" target="_blank"><img
                     src="https://img.shields.io/badge/License-MIT-yellow.svg" title="License: MIT"/></a>
         </p>
+        <p>Tiny size: 7KB (gzip)</p>
         <p>
             <a href="https://github.com/dozjs/doz/blob/master/documentation/index.md">Documentation</a> | <a
                 href="https://dozjs.github.io/doz/example/">Demo</a>
@@ -35,27 +38,23 @@
     </div>
 
     <div>
-        <p>Tiny size: 7KB (gzip)</p>
-
-        <H3><a id="Why_another_framework_2"></a>Why another framework?</H3>
+        <h3>Why another framework?</h3>
         <p>In the web there are many frameworks that do all the same things. But a lot of them are complex, we need to
             know
             a lot of directives and they make confusion for example with the context of “this”, some introduce other
             syntaxes like JSX. All you need is HTML, CSS and Doz.</p>
 
-        <iframe width="100%" height="400" src="//jsfiddle.net/z0xhxeau/5/embedded/result,js,html,css/dark/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        <br/><br/>
-        <h3><a id="Installation_5"></a>Installation</h3>
+        <h3>Installation</h3>
         <pre class="prettyprint"><code>
     npm install --save doz
         </code></pre>
 
-        <h3><a id="Example_10"></a>Example</h3>
+        <h3>Example</h3>
         <pre class="prettyprint"><code class="lang-html">
     &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
         </code></pre>
 
-        <h4><a id="Component_definition_16"></a>Component definition</h4>
+        <h4>Component definition</h4>
         <pre class="prettyprint"><code class="lang-js">
     Doz.component('button-counter', {
         props: {
@@ -74,8 +73,7 @@
         }
     });
         </code></pre>
-        <h4><a id="Make_a_view_with_the_component_defined_above_37"></a>Make a view with the component defined above
-        </h4>
+        <h4>Make a view with the component defined above</h4>
         <pre class="prettyprint"><code class="lang-js">
     new Doz({
         root: &apos;#app&apos;,
@@ -84,19 +82,22 @@
         &grave;
     });
         </code></pre>
-        <h4><a id="CDN_unpkg_49"></a>CDN unpkg</h4>
+        <h3>Todo list demo</h3>
+        <iframe width="100%" height="400" src="//jsfiddle.net/z0xhxeau/5/embedded/result,js,html,css/dark/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        <br/><br/>
+        <h4>CDN unpkg</h4>
         <pre class="prettyprint"><code class="lang-html">
     &lt;script src=&quot;https://unpkg.com/doz/dist/doz.min.js&quot;&gt;&lt;/script&gt;
         </code></pre>
-        <h4><a id="Changelog_54"></a>Changelog</h4>
+        <h4>Changelog</h4>
         <p>
             You can view the changelog <a href="https://github.com/dozjs/doz/blob/master/CHANGELOG.md">here</a>
         </p>
-        <h4><a id="License_57"></a>License</h4>
+        <h4>License</h4>
         <p>
             DOZ is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>
         </p>
-        <h4><a id="Author_60"></a>Author</h4>
+        <h4>Author</h4>
         <p>
             <a target="_blank" href="http://rica.li">Fabio Ricali</a>
         </p>
