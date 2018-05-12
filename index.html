@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/bundle.css">
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
     <title>DozJS</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -16,93 +14,8 @@
 </head>
 
 <body>
-
-<div class="container">
-    <div style="text-align:center; margin-top: 20px">
-
-        <p><img width="200" src="https://raw.githubusercontent.com/dozjs/doz/master/extra/doz.png" title="doz"/></p>
-
-        <p>A JavaScript framework for building UI, almost like writing in VanillaJS.</p>
-        <p>
-            <a href="https://travis-ci.org/dozjs/doz" target="_blank"><img
-                    src="https://travis-ci.org/dozjs/doz.svg?branch=master" title="Build Status"/></a>
-            <a href="https://opensource.org/licenses/MIT" target="_blank"><img
-                    src="https://img.shields.io/badge/License-MIT-yellow.svg" title="License: MIT"/></a>
-        </p>
-        <p>Tiny size: 7KB (gzip)</p>
-        <p>
-            <a href="https://github.com/dozjs/doz/blob/master/documentation/index.md">Documentation</a> | <a
-                href="https://dozjs.github.io/doz/example/">Demo</a>
-        </p>
-
-    </div>
-
-    <div>
-        <h3>Why another framework?</h3>
-        <p>In the web there are many frameworks that do all the same things. But a lot of them are complex, we need to
-            know
-            a lot of directives and they make confusion for example with the context of “this”, some introduce other
-            syntaxes like JSX. All you need is HTML, CSS and Doz.</p>
-
-        <h3>Installation</h3>
-        <pre class="prettyprint"><code>
-    npm install --save doz
-        </code></pre>
-
-        <h3>Example</h3>
-        <pre class="prettyprint"><code class="lang-html">
-    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
-        </code></pre>
-
-        <h4>Component definition</h4>
-        <pre class="prettyprint"><code class="lang-js">
-    Doz.component('button-counter', {
-        props: {
-            counter: 0
-        },
-        template: function() {
-            return `
-                &lt;div&gt;
-                    &lt;button onclick=&quot;this.click()&quot;&gt;${this.props.title}&lt;/button&gt;
-                    &lt;span class=&quot;counter&quot;&gt;${this.props.counter}&lt;/span&gt;
-                &lt;/div&gt;
-            `
-        },
-        click: function() {
-            this.props.counter += 1;
-        }
-    });
-        </code></pre>
-        <h4>Make a view with the component defined above</h4>
-        <pre class="prettyprint"><code class="lang-js">
-    new Doz({
-        root: &apos;#app&apos;,
-        template: &grave;
-            &lt;button-counter title=&quot;Click me!&quot;&gt;&lt;/button-counter&gt;
-        &grave;
-    });
-        </code></pre>
-        <h3>Todo list demo</h3>
-        <iframe width="100%" height="400" src="//jsfiddle.net/z0xhxeau/5/embedded/result,js,html,css/dark/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-        <br/><br/>
-        <h4>CDN unpkg</h4>
-        <pre class="prettyprint"><code class="lang-html">
-    &lt;script src=&quot;https://unpkg.com/doz/dist/doz.min.js&quot;&gt;&lt;/script&gt;
-        </code></pre>
-        <h4>Changelog</h4>
-        <p>
-            You can view the changelog <a href="https://github.com/dozjs/doz/blob/master/CHANGELOG.md">here</a>
-        </p>
-        <h4>License</h4>
-        <p>
-            DOZ is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>
-        </p>
-        <h4>Author</h4>
-        <p>
-            <a target="_blank" href="http://rica.li">Fabio Ricali</a>
-        </p>
-    </div>
-</div>
+<div id="root"></div>
+<script src="dist/bundle.js"></script>
 </body>
 
 </html>

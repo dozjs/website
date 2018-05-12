@@ -1,0 +1,39 @@
+{
+  "name": "doz-website",
+  "version": "1.0.0",
+  "description": "Doz website",
+  "private": true,
+  "scripts": {
+    "watch": "parcel watch src/index.js --out-file bundle --no-hmr --hmr-port 3059",
+    "build": "parcel build src/index.js --out-file bundle --out-dir build --public-url ./",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dozjs/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dozjs/website/issues"
+  },
+  "homepage": "https://github.com/dozjs/website#readme",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "animatify": "^1.0.2",
+    "babel-polyfill": "^6.26.0",
+    "doz": "0.0.22",
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "11.6.2",
+    "jsdom-global": "3.0.2",
+    "mocha": "^5.1.1"
+  }
+}
