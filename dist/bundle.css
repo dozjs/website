@@ -3503,6 +3503,11 @@ body {
 }header {
     text-align: center;
 }app-section section {
+    text-align: center;
+}
+
+app-section .logo {
+    width: 300px;
 }footer {
     text-align: center;
 }

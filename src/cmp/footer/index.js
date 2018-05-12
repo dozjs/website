@@ -5,7 +5,7 @@ component('app-footer', {
     template() {
         return `
             <footer>
-                Footer
+                DOZjs
             </footer>
         `
     }

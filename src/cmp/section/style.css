@@ -1,2 +1,7 @@
 app-section section {
+    text-align: center;
+}
+
+app-section .logo {
+    width: 300px;
 }
