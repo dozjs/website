@@ -22,7 +22,7 @@
     "animate.css": "^3.6.1",
     "animatify": "^1.0.2",
     "babel-polyfill": "^6.26.0",
-    "doz": "0.0.22",
+    "doz": "0.0.23",
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.0"
   },
