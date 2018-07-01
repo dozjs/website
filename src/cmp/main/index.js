@@ -1,0 +1,17 @@
+import {component} from 'doz'
+import './style.css'
+import logoUrl from '../../images/doz.png'
+
+component('app-main', {
+    template() {
+        return `
+            <main role="main">
+                <img class="logo" src="${logoUrl}" alt="Doz logo">
+                <h1 class="slogan">A JavaScript framework<br/>for building UI</h1>
+                <p class="lead">
+                    <a href="https://github.com/dozjs/doz#installation" class="btn btn-lg btn-primary">Get started</a>
+                </p>
+            </main>
+        `
+    }
+});

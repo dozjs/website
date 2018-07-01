@@ -1,0 +1,8 @@
+app-main .logo {
+    width: 250px;
+}
+
+app-main .slogan{
+    margin-bottom: 70px;
+    font-weight: lighter;
+}
