@@ -1,6 +1,7 @@
 import {component} from 'doz'
 import './style.css'
 import logoUrl from '../../images/doz.png'
+import './example'
 
 component('app-main', {
     template() {
@@ -11,6 +12,7 @@ component('app-main', {
                 <p class="lead">
                     <a href="https://github.com/dozjs/doz#installation" class="btn btn-lg btn-primary">Get started</a>
                 </p>
+                <app-example></app-example>
             </main>
         `
     }
