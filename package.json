@@ -4,9 +4,9 @@
   "description": "Doz website",
   "private": true,
   "scripts": {
-    "serve": "parcel serve index.html --no-cache --out-dir gh-pages",
-    "watch": "parcel watch index.html --no-cache --out-dir gh-pages",
-    "build": "parcel build index.html --no-cache --out-dir gh-pages",
+    "serve": "parcel serve index.html --no-cache --out-dir docs",
+    "watch": "parcel watch index.html --no-cache --out-dir docs",
+    "build": "parcel build index.html --no-cache --out-dir docs",
     "test": "mocha test"
   },
   "repository": {
