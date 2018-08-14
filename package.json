@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "parcel serve index.html --no-cache --out-dir gh-pages",
     "watch": "parcel watch index.html --no-cache --out-dir gh-pages",
-    "build": "parcel build index.html --no-cache --out-dir gh-pages && git commit -a -m BUILD",
+    "build": "parcel build index.html --no-cache --out-dir gh-pages",
     "test": "mocha test"
   },
   "repository": {
