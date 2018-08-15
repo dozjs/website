@@ -1,10 +1,10 @@
 import {component} from 'doz'
-import './style.css'
+import style from './style.css'
 
 component('app-header', {
     template() {
         return `
-            <header>
+            <header class="${style.header}">
                 <div class="inner">
                     <!--h1 class="masthead-brand h3">doz</h1-->
                     <nav class="nav nav-masthead justify-content-center">
