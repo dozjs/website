@@ -5,9 +5,7 @@ component('app-footer', {
     template() {
         return `
             <footer class="${style.footer}">
-                <div class="inner">
-                  <p>Built with passion by <a href="http://rica.li">Fabio Ricali</a>.</p>
-                </div>
+                <p>Built with passion by <a href="http://rica.li">Fabio Ricali</a>.</p>
             </footer>
         `
     }

@@ -1,12 +1,11 @@
 import {component} from 'doz'
 //import style from './style.css'
-import content from '../../../content/guide/index.md'
 
-component('app-page-doc', {
+component('app-page-example', {
     template() {
         return `
             <div class="page">
-                ${content}
+                <h1>Example</h1>
             </div>
         `
     }

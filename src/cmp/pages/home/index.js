@@ -1,6 +1,6 @@
 import {component} from 'doz'
 import style from './style.css'
-import logoUrl from '../../../images/doz.png'
+import logoUrl from '../../../images/doz-mono.svg'
 import './example'
 
 component('app-page-home', {
@@ -15,5 +15,11 @@ component('app-page-home', {
                 <app-example></app-example>
             </div>
         `
+    },
+    onMount() {
+        this.getStore('header').logoOpacity = 0
+    },
+    onUnmount() {
+        this.getStore('header').logoOpacity = 1
     }
 });
