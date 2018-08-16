@@ -23,14 +23,8 @@ body {
 body {
     display: -ms-flexbox;
     display: flex;
-    color: #fff;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
 :global #root {
     width: 100%;
-}
-
-:global .page {
-    margin-top: 60px;
 }

@@ -1,0 +1,17 @@
+:global .page {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: left;
+    color: #000;
+    background: #fff;
+}
+
+:global .page a,
+:global .page a:focus,
+:global .page a:hover {
+    color: #1f0c70;
+}
+
+:global .page h1 {
+    margin-bottom: 40px;
+}

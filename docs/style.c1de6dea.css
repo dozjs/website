@@ -22,14 +22,8 @@ body {
 
 body {
     display: flex;
-    color: #fff;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
 #root {
     width: 100%;
-}
-
-.page {
-    margin-top: 60px;
 }

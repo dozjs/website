@@ -3520,16 +3520,26 @@ body {
 
 body {
     display: flex;
-    color: #fff;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
 #root {
     width: 100%;
+}.page {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: left;
+    color: #000;
+    background: #fff;
 }
 
-.page {
-    margin-top: 60px;
+.page a,
+.page a:focus,
+.page a:hover {
+    color: #1f0c70;
+}
+
+.page h1 {
+    margin-bottom: 40px;
 }.style_header_3ZbWu {
     margin-top: 20px;
 }
