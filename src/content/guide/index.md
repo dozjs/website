@@ -56,5 +56,8 @@ import Doz from 'doz'
 
 new Doz({
     root: '#app'
+    template() {
+        return `ciao`
+    }
 });
 ```
