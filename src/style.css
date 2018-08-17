@@ -28,3 +28,7 @@ body {
 :global #root {
     width: 100%;
 }
+
+:global .container-fluid {
+    padding: 0;
+}

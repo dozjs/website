@@ -7,7 +7,10 @@ component('app-page-doc', {
     template() {
         return `
             <div class="page">
-                ${marked(this.$content)}
+                <div class="sidebar"></div>
+                <div class="content">                
+                    ${marked(this.$content)}
+                </div>
             </div>
         `
     },

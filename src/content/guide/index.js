@@ -9,5 +9,5 @@ export default {
     'inline-style'              : require('./inline-style.md'),
     'loops'                     : require('./loops.md'),
     'scoped-style'              : require('./scoped-style.md'),
-    'write-component'           : require('./write-component.md'),
+    'write-component'           : require('./write-component.md')
 }
