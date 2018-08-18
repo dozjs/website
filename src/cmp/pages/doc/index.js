@@ -4,10 +4,13 @@ import content from '../../../content/guide/'
 import marked from 'marked'
 
 component('app-page-doc', {
+
     template() {
         return `
             <div class="page">
-                <div class="sidebar"></div>
+                <div class="sidebar">
+                    <doc-sidebar></doc-sidebar>
+                </div>
                 <div class="content">                
                     ${marked(this.$content)}
                 </div>
@@ -16,7 +19,9 @@ component('app-page-doc', {
     },
 
     onCreate() {
-        const path = this.getCmp('router').$param('path') || 'index';
-        this.$content = content[path];
+        let path = this.getCmp('router').$currentPath();
+        path = path.split('/')[2] || 'index';
+        this.$content = content[path] || 'Page not found';
     }
+
 });

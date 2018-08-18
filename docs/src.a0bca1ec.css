@@ -3524,12 +3524,19 @@ body {
 
 #root {
     width: 100%;
+}
+
+.container-fluid {
+    padding: 0;
 }.page {
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 20px;
     text-align: left;
     color: #000;
     background: #fff;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
 }
 
 .page a,
@@ -3540,6 +3547,18 @@ body {
 
 .page h1 {
     margin-bottom: 40px;
+}
+
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    margin-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.content {
+    width: 100%;
 }.style_header_3ZbWu {
     margin-top: 20px;
 }
@@ -3575,7 +3594,7 @@ body {
     color: #fff;
     border-bottom-color: #fff;
 }.style_logo_2Bpu8 {
-    width: 250px;
+    width: 160px;
     margin: 60px 0;
 }
 

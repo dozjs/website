@@ -23,7 +23,7 @@
     "animatify": "^1.0.2",
     "babel-polyfill": "^6.26.0",
     "doz": "^1.4.4",
-    "doz-router": "^0.1.4",
+    "doz-router": "^1.0.0",
     "font-awesome": "^4.7.0",
     "marked": "^0.4.0",
     "normalize.css": "^8.0.0"
