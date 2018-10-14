@@ -2,6 +2,9 @@ import './header'
 import './main'
 import './footer'
 import Doz from 'doz'
+import snap from 'doz-snap/plugin'
+
+Doz.use(snap);
 
 new Doz({
     root: '#root',

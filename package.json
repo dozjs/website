@@ -4,9 +4,10 @@
   "description": "Doz website",
   "private": true,
   "scripts": {
-    "serve": "parcel serve src/index.html --no-cache --out-dir docs",
-    "watch": "parcel watch src/index.html --no-cache --out-dir docs",
-    "build": "parcel build src/index.html --no-cache --out-dir docs",
+    "serve": "parcel serve src/index.html --no-cache",
+    "watch": "parcel watch src/index.html --no-cache",
+    "build": "parcel build src/index.html --no-cache && npm run-script snap",
+    "snap": "doz-snap -f dist/index.html --no-clear-dir -o docs",
     "test": "mocha test"
   },
   "repository": {
@@ -23,7 +24,7 @@
     "animate.css": "^3.6.1",
     "animatify": "^1.0.2",
     "babel-polyfill": "^6.26.0",
-    "doz": "^1.4.4",
+    "doz": "^1.6.8",
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.0"
   },
@@ -32,9 +33,12 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "babel-runtime": "^6.26.0",
+    "doz-snap": "^1.0.0",
     "ignore-styles": "^5.0.1",
     "jsdom": "11.6.2",
     "jsdom-global": "3.0.2",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-clean-dist": "0.0.6"
   }
 }
