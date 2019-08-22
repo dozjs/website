@@ -24,7 +24,6 @@
     "animate.css": "^3.6.1",
     "animatify": "^1.0.2",
     "babel-polyfill": "^6.26.0",
-    "doz": "^1.6.8",
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.0"
   },
@@ -33,7 +32,8 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "babel-runtime": "^6.26.0",
-    "doz-snap": "^1.0.0",
+    "doz": "^1.23.1",
+    "doz-snap": "^2.0.1",
     "ignore-styles": "^5.0.1",
     "jsdom": "11.6.2",
     "jsdom-global": "3.0.2",

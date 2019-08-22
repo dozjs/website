@@ -2,8 +2,8 @@ import {component} from 'doz'
 import './style.css'
 
 component('app-header', {
-    template() {
-        return `
+    template(h) {
+        return h`
             <header>
                 <div class="inner">
                     <!--h1 class="masthead-brand h3">doz</h1-->
